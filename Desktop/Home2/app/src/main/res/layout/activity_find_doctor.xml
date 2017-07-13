@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/inquiry_listcell_doctor"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:padding="10dp"
+        android:src="@mipmap/doctor"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/inquiry_listcell_doctor"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:textColor="#000"
+            android:text="找对应科室医生"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@android:color/darker_gray"
+            android:text="言闻分类科室医生 对症咨询"
+            />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/expandable_group_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:layout_alignParentRight="true"
+        android:src="@mipmap/right"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/expandable_group_img"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:scaleX="0.8"
+        android:scaleY="0.8"
+        android:src="@mipmap/mianfei"
+        />
+
+</RelativeLayout>

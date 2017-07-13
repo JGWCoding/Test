@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Home</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <string-array name="pagers">
+        <item>推荐</item>
+        <item>高血压</item>
+        <item>高血糖</item>
+        <item>高血脂</item>
+        <item>风湿</item>
+        <item>鼻炎</item>
+        <item>妇科</item>
+    </string-array>
+
+</resources>

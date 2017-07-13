@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+        <!-- 病科icon -->
+        <ImageView
+            android:id="@+id/inquiry_expandablelistview_group_icon"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:padding="10dp"
+            android:src="@mipmap/tangniaobing"
+            />
+        <!-- Arrow -->
+        <ImageView
+            android:id="@+id/inquiry_expandablelistview_group_arrow"
+            style="@style/listCellArrowStyle"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            />
+        <!-- TextView -->
+        <LinearLayout
+            android:id="@+id/ll_inquiry_group_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@+id/inquiry_expandablelistview_group_icon"
+            android:layout_toLeftOf="@id/inquiry_expandablelistview_group_arrow"
+            android:layout_toRightOf="@+id/inquiry_expandablelistview_group_icon"
+            android:orientation="vertical"
+            android:padding="10dp"
+            >
+            <!-- 病科名称 -->
+            <TextView
+                android:id="@+id/inquiry_expandablelistview_group_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="高血压"
+                android:textColor="#000"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <!-- 描述 -->
+                <TextView
+                    android:id="@+id/inquiry_expandablelistview_group_dec"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="1名高血压医生在线为您服务"
+                    android:textColor="@android:color/darker_gray"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/inquiry_expandablelistview_group_arrow"
+            android:src="@mipmap/mianfei"
+            android:layout_alignBottom="@id/inquiry_expandablelistview_group_arrow"/>
+</RelativeLayout>
